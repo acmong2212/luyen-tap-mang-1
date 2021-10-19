@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="1">
+<button type="button" onclick="click1()">Ket qua</button>
+<div id="2"></div>
+</body>
+<script>
+    let numbers = [0, 5, 10, 15, 25, 35, 45, 55, 2, 1];
+
+    function click1() {
+        let check = +document.getElementById('1').value
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] === check) {
+                numbers.splice(i, 1)
+                break;
+            }
+        }
+        document.getElementById('2').innerHTML = numbers
+    }
+
+</script>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="result"></div>
+</body>
+<script>
+    let numbers = [0, 5, 10, 15, 25, 35, 45, 55, 2, 1];
+    for (let i = 0; i < numbers.length; i++) {
+        numbers.sort(function (a, b) {
+            return a - b
+        });
+    }document.getElementById('result').innerHTML = numbers
+</script>
+</html>

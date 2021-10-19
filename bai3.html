@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="result"></div>
+<div id="result1"></div>
+</body>
+<script>
+    let numbers = [0, 5, 10, 15, 25, 35, 45, 55, 2, 1]
+    let max = numbers[0]
+    let tong = 0
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+            max = numbers[i]
+        }
+        tong = tong + numbers[i]
+    }
+    document.getElementById('result').innerHTML ="So lon nhat la: " + max
+    document.getElementById('result1').innerHTML ="Gia tri trung binh cua cac phan tu la: " + tong / numbers.length
+
+</script>
+</html>
